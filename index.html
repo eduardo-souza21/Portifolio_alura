@@ -5,21 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_links" href="index.html">Home</a>
+            <a class="cabecalho_links" href="about.html">Sobre mim</a>
+            <!-- <a class="cabecalho_links" href="curriculo.html">Curriculo</a> -->
+        </nav>
+    </header>
+
     <main class="apresentacao">
         <section class="conteudo">
             <h1 class="titulo">Eleve seu negócio digital a outro nível <strong class="title-des">com um Front-end de qualidade!</strong></h1>
             <p class="paragrafo">Olá! Sou Eduardo Souza, desenvolvedor Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
             <div class="botoes">
-                <a class="links" href="https://www.instagram.com/eduardo_souuza21/">Instagram</a>
-                <a class="links" href="https://github.com/eduardo-souza21">Github</a>
+                <h2 class="subtitulo">Acesse minhas redes:</h2>
+                <a class="links" href="https://github.com/eduardo-souza21">
+                    <img src="imagens/github.png" alt="github_img">
+                    Github
+                </a>
+                <a class="links" href="https://www.linkedin.com/in/eduardo-souza-b64876234/">
+                    <img src="imagens/linkedin.png" alt="linkedin_img">
+                    LinkedIn
+                </a>
             </div>
         </section>
-        <img src="icon.png" alt="foto">
+        <img src="imagens/icon.png" alt="foto">
     </main>
-    <footer></footer>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Eduardo Souza</p>
+    </footer>
 </body>
 </html>
