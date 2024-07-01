@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
 
+:root {
+    --cor-primaria: #092635;
+    --cor-secundaria: #c8f8e6;
+    --cor-terciaria: #56ac8b;
+    --cor-hover: #1B4242;
+
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +17,8 @@
 
 body {
     box-sizing: border-box;
-    background-color: #000000;
-    color: white;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -21,10 +31,10 @@ body {
 }
 
 .cabecalho_links {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
@@ -44,16 +54,16 @@ body {
 
 .titulo {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-primaria);
 }
 
 .title-des {
-    color: #EABE6C;
+    color: var(--cor-terciaria);
 }
 
 .paragrafo {
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-secundaria);
 }
 
 .botoes {
@@ -65,7 +75,7 @@ body {
 }
 
 .subtitulo {
-    font-family: 'Krona One' , sans-serif;
+    font-family: var(--font-primaria);
     font-weight: 400;
     font-size: 24px;
 
@@ -75,7 +85,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor-terciaria);
     width: 378px;
     text-align: center;
     border-radius: 8px;
@@ -83,27 +93,21 @@ body {
     font-weight: 600;
     padding: 20px 0;
     text-decoration: none;
-    color: #f6f6f6;
-    font-family: "Montserrat", sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
 }
 
 .links:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
     padding: 3%;
 }
 
 .rodape {
     padding: 18px;
-    color: #000000;
-    background-color: #22D4FD;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: 'Montserrat' , sans-serif;
+    font-family: var(--font-secundaria);
     font-size: 20px;
     font-weight: 400;
-}
-
-
-.apresentacao__conteudo__texto a{
-    text-decoration: none;
-    color: #22D4FD;
 }
